@@ -1,0 +1,384 @@
+# ascii dump of database
+
+# DpType
+TypeName
+sgFDPZ.sgFDPZ	1#1
+	GlobalStatus	41#2:sgFwSystem
+	History	41#3:sgFwHistory
+	ComponentsParams	41#119:sgParams
+	SubComponentsParams	41#120:sgParams
+	XMLMatchingTable	41#5:sgXMLMatchingTable
+	WatchDogsConfig	41#6:sgWatchDogs
+	Components	1#7
+		MainServer_1	41#8:sgFwSystem
+		MainServer_2	41#9:sgFwSystem
+		MainServer_3	41#10:sgFwSystem
+		PrintServer_1	41#11:sgFwSystem
+		PrintServer_2	41#12:sgFwSystem
+		PrintServer_3	41#13:sgFwSystem
+		StripPrintersGlobal	41#17:sgFwSystem
+		StripPrinters	1#18
+			StripPrinter_N	41#19:sgFwSystem
+			StripPrinter_E	41#20:sgFwSystem
+			StripPrinter_S	41#21:sgFwSystem
+			StripPrinter_W	41#22:sgFwSystem
+			StripPrinter_M1	41#5624:sgFwSystem
+			StripPrinter_M2	41#24:sgFwSystem
+			StripPrinter_M3	41#25:sgFwSystem
+			StripPrinter_M4	41#26:sgFwSystem
+			StripPrinter_FD	41#2774:sgFwSystem
+			StripPrinter_AR	41#2775:sgFwSystem
+			StripPrinter_NY	41#2776:sgFwSystem
+		SPMOXAsGlobal	41#5524:sgFwSystem
+		SPMOXAs	1#5525
+			SPMOXA_1	41#5526:sgFwSystem
+			SPMOXA_2	41#5527:sgFwSystem
+		ClientsGlobal	41#28:sgFwSystem
+		Clients	1#29
+			Client_n_re	41#2777:sgFwSystem
+			Client_n_rp	41#2778:sgFwSystem
+			Client_n_rc	41#1:sgFwSystem
+			Client_e_re	41#2779:sgFwSystem
+			Client_e_rp	41#2780:sgFwSystem
+			Client_s_re	41#2781:sgFwSystem
+			Client_s_rp	41#2782:sgFwSystem
+			Client_s_rc	41#1:sgFwSystem
+			Client_w_re	41#2783:sgFwSystem
+			Client_w_rp	41#2784:sgFwSystem
+			Client_m1_re	41#5625:sgFwSystem
+			Client_m1_rp	41#5626:sgFwSystem
+			Client_m2_re	41#2787:sgFwSystem
+			Client_m2_rp	41#2788:sgFwSystem
+			Client_m3_re	41#2789:sgFwSystem
+			Client_m3_rp	41#2790:sgFwSystem
+			Client_m3_rc	41#1:sgFwSystem
+			Client_m4_re	41#2791:sgFwSystem
+			Client_m4_rp	41#2792:sgFwSystem
+			Client_m4_rc	41#1:sgFwSystem
+			Client_fic	41#2797:sgFwSystem
+			Client_fmp	41#2798:sgFwSystem
+			Client_smc_sec	41#1:sgFwSystem
+			Client_smc_sup	41#1:sgFwSystem
+			Client_fdo_ts	41#5888:sgFwSystem
+			Client_fia	41#2802:sgFwSystem
+			Client_delta	41#2803:sgFwSystem
+			Client_w_rc	41#5628:sgFwSystem
+			Client_e_rc	41#5629:sgFwSystem
+			Client_m2_rc	41#5630:sgFwSystem
+			Client_dam	41#2808:sgFwSystem
+			Client_m1_rc	41#5631:sgFwSystem
+			Client_ar_01	41#1:sgFwSystem
+			Client_ar_02	41#1:sgFwSystem
+			Client_zr_re	41#2810:sgFwSystem
+			Client_zr_gn	41#2811:sgFwSystem
+			Client_ny_re	41#2812:sgFwSystem
+			Client_ny_gn	41#2813:sgFwSystem
+			Client_ai_01	41#5326:sgFwSystem
+			Client_ai_02	41#5327:sgFwSystem
+		InterfacesGlobal	41#52:sgFwSystem
+		Interfaces	1#53
+			Interface_MV	41#54:sgFwSystem
+			Interface_TACO	41#55:sgFwSystem
+			Interface_ZECAT_A	41#5458:sgFwSystem
+			Interface_ZECAT_B	41#5459:sgFwSystem
+			Interface_SYLEX	41#57:sgFwSystem
+			Interface_INIS	41#2017:sgFwSystem
+		INIS	1#1845
+			INIS_1_FDP	41#1846:sgFwSystem
+			INIS_1_SWITCH_COMMUT	41#1847:sgFwSystem
+			INIS_1_STANDBY	41#1913:sgFwSystem
+			INIS_1_AFTN	41#1914:sgFwSystem
+			INIS_UNIT_1	41#2444:sgFwSystem
+			INIS_UNIT_2	41#2445:sgFwSystem
+			INIS_2_FDP	41#2446:sgFwSystem
+			INIS_2_AFTN	41#2447:sgFwSystem
+			INIS_2_STANDBY	41#2448:sgFwSystem
+			INIS_2_SWITCH_COMMUT	41#2449:sgFwSystem
+		Switch_1	41#2019:sgFwSystem
+		Switch_2	41#2020:sgFwSystem
+		Switch_3	41#2021:sgFwSystem
+	References	1#58
+		OPS_Server	23#59
+		INIS_1	23#74
+		MainServer_1	23#2375
+		MainServer_2	23#2376
+		MainServer_3	23#2377
+		INIS_2	23#2451
+	XMLDummySystems	1#2676
+		OPS_Server	41#2677:sgFwSystemDummy
+		INIS_1_TND	41#2678:sgFwSystemDummy
+		INIS_2_TND	41#2679:sgFwSystemDummy
+sgFwSystemDummy.sgFwSystemDummy	1#1
+	PreStatus	25#39
+	Status	25#12
+	Label1	25#3
+	Label2	25#4
+	Label3	25#5
+	Label4	25#18
+	Message	25#40
+sgFwSystem.sgFwSystem	1#1
+	PreStatus	25#39
+	Status	25#12
+	StatusDelay	21#37
+	Label1	25#3
+	Label2	25#4
+	Label3	25#5
+	Label4	25#18
+	Disabled	23#27
+	SubDisabled	23#40
+	Hidden	23#41
+	Message	25#6
+	CommandName	25#7
+	CommandParams	25#8
+	SendCommand	23#9
+	StatusReceived	21#15
+	Comment	25#42
+	Events	1#22
+		LastStatus	25#23
+		GenerateEvents	23#24
+		EventText	25#25
+		Histories	9#26
+	Alarms	1#28
+		GenerateAlarms	23#29
+		AlarmActive	23#31
+	LogicConfig	1#32
+		LogicEnabled	23#35
+		Rule	25#33
+		Inputs	9#34
+		NotLogicInputs	9#45
+	Params	25#43
+	AETable	25#44
+sgFwHistory.sgFwHistory	1#1
+	Message	25#3
+	HistorySize	21#4
+	ShortHistory	9#6
+sgParams.sgParams	1#1
+	Histories	9#2
+	AETable	25#3
+	Delay	21#4
+	GenerateAlarms	23#5
+	GenerateEvents	23#6
+sgXMLMatchingTable.sgXMLMatchingTable	1#1
+	Input	9#2
+	Output	9#3
+sgWatchDogs.sgWatchDogs	1#1
+	References	9#2
+	DefaultValues	9#4
+	Outputs	9#5
+	Timeouts	5#7
+
+
+# Datapoint/DpId
+DpName	TypeName	ID
+FDPZ	sgFDPZ	27834
+
+# Aliases/Comments
+AliasId	AliasName	CommentName
+FDPZ.GlobalStatus	""	lt:1 LANG:5 "FDPZ@@"
+FDPZ.Components.MainServer_1	""	lt:1 LANG:5 "Main Server 1@@"
+FDPZ.Components.MainServer_2	""	lt:1 LANG:5 "Main Server 2@@"
+FDPZ.Components.MainServer_3	""	lt:1 LANG:5 "Main Server 3@@"
+FDPZ.Components.PrintServer_1	""	lt:1 LANG:5 "Print Server 1@@"
+FDPZ.Components.PrintServer_2	""	lt:1 LANG:5 "Print Server 2@@"
+FDPZ.Components.PrintServer_3	""	lt:1 LANG:5 "Print Server 3@@"
+FDPZ.Components.StripPrintersGlobal	""	lt:1 LANG:5 "FDPZ Strip Printers@@"
+FDPZ.Components.StripPrinters.StripPrinter_N	""	lt:1 LANG:5 "SP_N@@"
+FDPZ.Components.StripPrinters.StripPrinter_E	""	lt:1 LANG:5 "SP_E@@"
+FDPZ.Components.StripPrinters.StripPrinter_S	""	lt:1 LANG:5 "SP_S@@"
+FDPZ.Components.StripPrinters.StripPrinter_W	""	lt:1 LANG:5 "SP_W@@"
+FDPZ.Components.StripPrinters.StripPrinter_M2	""	lt:1 LANG:5 "SP_M2@@"
+FDPZ.Components.StripPrinters.StripPrinter_M3	""	lt:1 LANG:5 "SP_M3@@"
+FDPZ.Components.StripPrinters.StripPrinter_M4	""	lt:1 LANG:5 "SP_M4@@"
+FDPZ.Components.StripPrinters.StripPrinter_FD	""	lt:1 LANG:5 "SP_FD@@"
+FDPZ.Components.StripPrinters.StripPrinter_AR	""	lt:1 LANG:5 "SP_AR@@"
+FDPZ.Components.StripPrinters.StripPrinter_NY	""	lt:1 LANG:5 "SP_NY@@"
+FDPZ.Components.ClientsGlobal	""	lt:1 LANG:5 "FDPZ Workstations@@"
+FDPZ.Components.Clients.Client_n_re	""	lt:1 LANG:5 "ws_n_re@@"
+FDPZ.Components.Clients.Client_n_rp	""	lt:1 LANG:5 "ws_n_rp@@"
+FDPZ.Components.Clients.Client_n_rc	""	lt:1 LANG:5 "ws_n_rc@@"
+FDPZ.Components.Clients.Client_e_re	""	lt:1 LANG:5 "ws_e_re@@"
+FDPZ.Components.Clients.Client_e_rp	""	lt:1 LANG:5 "ws_e_rp@@"
+FDPZ.Components.Clients.Client_s_re	""	lt:1 LANG:5 "ws_s_re@@"
+FDPZ.Components.Clients.Client_s_rp	""	lt:1 LANG:5 "ws_s_rp@@"
+FDPZ.Components.Clients.Client_s_rc	""	lt:1 LANG:5 "ws_s_rc@@"
+FDPZ.Components.Clients.Client_w_re	""	lt:1 LANG:5 "ws_w_re@@"
+FDPZ.Components.Clients.Client_w_rp	""	lt:1 LANG:5 "ws_w_rp@@"
+FDPZ.Components.Clients.Client_m2_re	""	lt:1 LANG:5 "ws_m2_re@@"
+FDPZ.Components.Clients.Client_m2_rp	""	lt:1 LANG:5 "ws_m2_rp@@"
+FDPZ.Components.Clients.Client_m3_re	""	lt:1 LANG:5 "ws_m3_re@@"
+FDPZ.Components.Clients.Client_m3_rp	""	lt:1 LANG:5 "ws_m3_rp@@"
+FDPZ.Components.Clients.Client_m3_rc	""	lt:1 LANG:5 "ws_m3_rc@@"
+FDPZ.Components.Clients.Client_m4_re	""	lt:1 LANG:5 "ws_m4_re@@"
+FDPZ.Components.Clients.Client_m4_rp	""	lt:1 LANG:5 "ws_m4_rp@@"
+FDPZ.Components.Clients.Client_m4_rc	""	lt:1 LANG:5 "ws_m4_rc@@"
+FDPZ.Components.Clients.Client_fic	""	lt:1 LANG:5 "ws_fic@@"
+FDPZ.Components.Clients.Client_fmp	""	lt:1 LANG:5 "ws_fmp@@"
+FDPZ.Components.Clients.Client_smc_sec	""	lt:1 LANG:5 "ws_smc_sec@@"
+FDPZ.Components.Clients.Client_smc_sup	""	lt:1 LANG:5 "ws_smc_sup@@"
+FDPZ.Components.Clients.Client_fia	""	lt:1 LANG:5 "ws_fia@@"
+FDPZ.Components.Clients.Client_delta	""	lt:1 LANG:5 "ws_delta@@"
+FDPZ.Components.Clients.Client_dam	""	lt:1 LANG:5 "ws_dam@@"
+FDPZ.Components.Clients.Client_ar_01	""	lt:1 LANG:5 "ws_ar_01@@"
+FDPZ.Components.Clients.Client_ar_02	""	lt:1 LANG:5 "ws_ar_02@@"
+FDPZ.Components.Clients.Client_zr_re	""	lt:1 LANG:5 "ws_zr_re@@"
+FDPZ.Components.Clients.Client_zr_gn	""	lt:1 LANG:5 "ws_zr_gn@@"
+FDPZ.Components.Clients.Client_ny_re	""	lt:1 LANG:5 "ws_ny_re@@"
+FDPZ.Components.Clients.Client_ny_gn	""	lt:1 LANG:5 "ws_ny_gn@@"
+FDPZ.Components.InterfacesGlobal	""	lt:1 LANG:5 "FDPZ Interfaces@@"
+FDPZ.Components.Interfaces.Interface_MV	""	lt:1 LANG:5 "Interface with MV@@"
+FDPZ.Components.Interfaces.Interface_TACO	""	lt:1 LANG:5 "Interface with TACO@@"
+FDPZ.Components.Interfaces.Interface_SYLEX	""	lt:1 LANG:5 "Interface with SYLEX@@"
+FDPZ.Components.Interfaces.Interface_INIS	""	lt:1 LANG:5 "Interface with INIS@@"
+FDPZ.Components.INIS.INIS_1_FDP	""	lt:1 LANG:5 "FDP@@"
+FDPZ.Components.INIS.INIS_1_SWITCH_COMMUT	""	lt:1 LANG:5 "INIS SWITCH@@"
+FDPZ.Components.INIS.INIS_1_STANDBY	""	lt:1 LANG:5 "1 ->@@"
+FDPZ.Components.INIS.INIS_1_AFTN	""	lt:1 LANG:5 "AFTN@@"
+FDPZ.Components.INIS.INIS_UNIT_1	""	lt:1 LANG:5 "INIS 1@@"
+FDPZ.Components.INIS.INIS_UNIT_2	""	lt:1 LANG:5 "INIS 2@@"
+FDPZ.Components.INIS.INIS_2_FDP	""	lt:1 LANG:5 "FDP@@"
+FDPZ.Components.INIS.INIS_2_AFTN	""	lt:1 LANG:5 "AFTN@@"
+FDPZ.Components.INIS.INIS_2_STANDBY	""	lt:1 LANG:5 "<- 2@@"
+FDPZ.Components.INIS.INIS_2_SWITCH_COMMUT	""	lt:1 LANG:5 "INIS SWITCH@@"
+FDPZ.Components.Switch_1	""	lt:1 LANG:5 "Switch 1@@"
+FDPZ.Components.Switch_2	""	lt:1 LANG:5 "Switch 2@@"
+FDPZ.Components.Switch_3	""	lt:1 LANG:5 "Switch 3@@"
+FDPZ.Components.Clients.Client_ai_01	""	lt:1 LANG:5 "ws_ai_01@%s@"
+FDPZ.Components.Clients.Client_ai_02	""	lt:1 LANG:5 "ws_ai_02@%s@"
+FDPZ.Components.Interfaces.Interface_ZECAT_A	""	lt:1 LANG:5 "Interface with ZECAT A@@"
+FDPZ.Components.Interfaces.Interface_ZECAT_B	""	lt:1 LANG:5 "Interface with ZECAT B@@"
+FDPZ.Components.SPMOXAsGlobal	""	lt:1 LANG:5 "FDPZ SP MOXAs@@"
+FDPZ.Components.SPMOXAs.SPMOXA_1	""	lt:1 LANG:5 "SPMOXA_1@@"
+FDPZ.Components.SPMOXAs.SPMOXA_2	""	lt:1 LANG:5 "SPMOXA_2@@"
+FDPZ.Components.StripPrinters.StripPrinter_M1	""	lt:1 LANG:5 "SP_M1@@"
+FDPZ.Components.Clients.Client_m1_re	""	lt:1 LANG:5 "ws_m1_re@@"
+FDPZ.Components.Clients.Client_m1_rp	""	lt:1 LANG:5 "ws_m1_rp@@"
+FDPZ.Components.Clients.Client_w_rc	""	lt:1 LANG:5 "ws_w_rc@@"
+FDPZ.Components.Clients.Client_e_rc	""	lt:1 LANG:5 "ws_e_rc@@"
+FDPZ.Components.Clients.Client_m2_rc	""	lt:1 LANG:5 "ws_m2_rc@@"
+FDPZ.Components.Clients.Client_m1_rc	""	lt:1 LANG:5 "ws_m1_rc @@"
+FDPZ.Components.Clients.Client_fdo_ts	""	lt:1 LANG:5 "ws_fdo_ts@@"
+
+# DpValue
+ElementName	TypeName	_original.._value	_original.._status	_original.._stime
+FDPZ.GlobalStatus.Alarms.GenerateAlarms	sgFDPZ	1	0x101	26.09.2008 13:29:08.815
+FDPZ.GlobalStatus.LogicConfig.LogicEnabled	sgFDPZ	1	0x101	26.09.2008 13:29:08.878
+FDPZ.GlobalStatus.LogicConfig.Rule	sgFDPZ	"TruthTable02"	0x101	26.09.2008 13:29:08.909
+FDPZ.GlobalStatus.LogicConfig.Inputs	sgFDPZ	"FDPZ.Components.INIS.*", "FDPZ.Components.*Global", "FDPZ.Components.MainServer*", "FDPZ.Components.PrintServer*", "FDPZ.Components.Switch*"	0x101	26.09.2008 13:29:08.940
+FDPZ.GlobalStatus.AETable	sgFDPZ	"AETable02"	0x101	26.09.2008 13:29:08.971
+FDPZ.History.HistorySize	sgFDPZ	100	0x101	26.09.2008 13:29:09.003
+FDPZ.ComponentsParams.AETable	sgFDPZ	"AETable02"	0x101	26.09.2008 13:29:09.034
+FDPZ.SubComponentsParams.Histories	sgFDPZ	"FDPZ.History"	0x101	26.09.2008 13:29:09.065
+FDPZ.SubComponentsParams.AETable	sgFDPZ	"AETable02"	0x101	26.09.2008 13:29:09.096
+FDPZ.SubComponentsParams.GenerateEvents	sgFDPZ	1	0x101	26.09.2008 13:29:09.128
+FDPZ.XMLMatchingTable.Input	sgFDPZ	"FDPZ.SP_*", "FDPZ.SPMOXA_*", "FDPZ.ws*", "FDPZ.Interface*", "FDPZ.MainServer*", "FDPZ.PrintServer*", "FDPZ.Switch*", "FDPZ.OPS_Server", "INIS_UNIT_1.TND", "INIS_UNIT_2.TND", "INIS_UNIT_1.INIS_UNIT_1", "INIS_UNIT_2.INIS_UNIT_2", "INIS_UNIT_1.*", "INIS_UNIT_2.*"	0x101	26.09.2008 13:29:09.159
+FDPZ.XMLMatchingTable.Output	sgFDPZ	"FDPZ.Components.StripPrinters.StripPrinter_*", "FDPZ.Components.SPMOXAs.SPMOXA_*", "FDPZ.Components.Clients.Client*", "FDPZ.Components.Interfaces.Interface*", "FDPZ.Components.MainServer*+FDPZ.References.MainServer*", "FDPZ.Components.PrintServer*", "FDPZ.Components.Switch*", "FDPZ.XMLDummySystems.OPS_Server+FDPZ.References.OPS_Server", "FDPZ.XMLDummySystems.INIS_1_TND", "FDPZ.XMLDummySystems.INIS_2_TND", "FDPZ.Components.INIS.INIS_UNIT_1+FDPZ.References.INIS_1", "FDPZ.Components.INIS.INIS_UNIT_2+FDPZ.References.INIS_2", "FDPZ.Components.INIS.INIS_1_*", "FDPZ.Components.INIS.INIS_2_*"	0x101	26.09.2008 13:29:09.190
+FDPZ.WatchDogsConfig.References	sgFDPZ	"FDPZ.References.INIS_1", "FDPZ.References.INIS_1", "FDPZ.References.INIS_2", "FDPZ.References.INIS_2", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.MainServer*", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server", "FDPZ.References.OPS_Server"	0x101	25.11.2008 13:42:51.954
+FDPZ.WatchDogsConfig.DefaultValues	sgFDPZ	"UKN", "UKN", "UKN", "UKN", "UKN", "", "", "", "", "UKN", "UKN", "UKN", " ", "UKN", "UKN", "", "UKN", ""	0x101	25.11.2008 13:42:37.142
+FDPZ.WatchDogsConfig.Outputs	sgFDPZ	"FDPZ.Components.INIS.INIS_1*.PreStatus", "FDPZ.Components.INIS.INIS_UNIT_1.PreStatus", "FDPZ.Components.INIS.INIS_2*.PreStatus", "FDPZ.Components.INIS.INIS_UNIT_2.PreStatus", "FDPZ.Components.MainServer*.PreStatus", "FDPZ.Components.MainServer*.Label1", "FDPZ.Components.MainServer*.Label2", "FDPZ.Components.MainServer*.Label3", "FDPZ.Components.MainServer*.Label4", "FDPZ.Components.PrintServer*.PreStatus", "FDPZ.Components.Switch*.PreStatus", "FDPZ.Components.StripPrinters.StripPrinter*.PreStatus", "FDPZ.Components.StripPrinters.StripPrinter*.Label1", "FDPZ.Components.Clients.Client*.PreStatus", "FDPZ.Components.Interfaces.Interface*.PreStatus", "FDPZ.Components.Interfaces.Interface*.Label1", "FDPZ.Components.SPMOXAs.SPMOXA_*.PreStatus", "FDPZ.Components.SPMOXAs.SPMOXA_*.Label1"	0x101	25.11.2008 13:41:52.722
+FDPZ.WatchDogsConfig.Timeouts	sgFDPZ	75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75	0x101	25.11.2008 13:43:06.172
+FDPZ.Components.MainServer_1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.346
+FDPZ.Components.MainServer_2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.378
+FDPZ.Components.MainServer_3.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.409
+FDPZ.Components.PrintServer_1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.440
+FDPZ.Components.PrintServer_2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.471
+FDPZ.Components.PrintServer_3.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.503
+FDPZ.Components.StripPrintersGlobal.LogicConfig.LogicEnabled	sgFDPZ	1	0x101	26.09.2008 13:29:09.534
+FDPZ.Components.StripPrintersGlobal.LogicConfig.Rule	sgFDPZ	"TruthTable02"	0x101	26.09.2008 13:29:09.565
+FDPZ.Components.StripPrintersGlobal.LogicConfig.Inputs	sgFDPZ	"FDPZ.Components.StripPrinters.*"	0x101	26.09.2008 13:29:09.596
+FDPZ.Components.StripPrintersGlobal.Params	sgFDPZ	"FDPZ.ComponentsParams"	0x101	26.09.2008 13:29:09.628
+FDPZ.Components.StripPrinters.StripPrinter_N.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.784
+FDPZ.Components.StripPrinters.StripPrinter_E.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.815
+FDPZ.Components.StripPrinters.StripPrinter_S.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.846
+FDPZ.Components.StripPrinters.StripPrinter_W.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.878
+FDPZ.Components.StripPrinters.StripPrinter_M2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.940
+FDPZ.Components.StripPrinters.StripPrinter_M3.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.971
+FDPZ.Components.StripPrinters.StripPrinter_M4.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.003
+FDPZ.Components.StripPrinters.StripPrinter_FD.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.143
+FDPZ.Components.StripPrinters.StripPrinter_AR.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.175
+FDPZ.Components.StripPrinters.StripPrinter_NY.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.206
+FDPZ.Components.ClientsGlobal.LogicConfig.LogicEnabled	sgFDPZ	1	0x101	26.09.2008 13:29:10.300
+FDPZ.Components.ClientsGlobal.LogicConfig.Rule	sgFDPZ	"TruthTable02"	0x101	26.09.2008 13:29:10.331
+FDPZ.Components.ClientsGlobal.LogicConfig.Inputs	sgFDPZ	"FDPZ.Components.Clients.*"	0x101	26.09.2008 13:29:10.362
+FDPZ.Components.ClientsGlobal.Params	sgFDPZ	"FDPZ.ComponentsParams"	0x101	26.09.2008 13:29:10.393
+FDPZ.Components.Clients.Client_n_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.425
+FDPZ.Components.Clients.Client_n_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.456
+FDPZ.Components.Clients.Client_n_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.456
+FDPZ.Components.Clients.Client_e_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.487
+FDPZ.Components.Clients.Client_e_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.518
+FDPZ.Components.Clients.Client_s_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.550
+FDPZ.Components.Clients.Client_s_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.581
+FDPZ.Components.Clients.Client_s_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.581
+FDPZ.Components.Clients.Client_w_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.612
+FDPZ.Components.Clients.Client_w_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.643
+FDPZ.Components.Clients.Client_m2_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.737
+FDPZ.Components.Clients.Client_m2_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.768
+FDPZ.Components.Clients.Client_m3_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.800
+FDPZ.Components.Clients.Client_m3_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.831
+FDPZ.Components.Clients.Client_m3_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.831
+FDPZ.Components.Clients.Client_m4_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.862
+FDPZ.Components.Clients.Client_m4_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.893
+FDPZ.Components.Clients.Client_m4_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.893
+FDPZ.Components.Clients.Client_fic.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.925
+FDPZ.Components.Clients.Client_fmp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.956
+FDPZ.Components.Clients.Client_smc_sec.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.987
+FDPZ.Components.Clients.Client_smc_sup.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.018
+FDPZ.Components.Clients.Client_fia.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.081
+FDPZ.Components.Clients.Client_delta.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.112
+FDPZ.Components.Clients.Client_dam.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.268
+FDPZ.Components.Clients.Client_ar_01.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.299
+FDPZ.Components.Clients.Client_ar_02.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.299
+FDPZ.Components.Clients.Client_zr_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.331
+FDPZ.Components.Clients.Client_zr_gn.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.362
+FDPZ.Components.Clients.Client_ny_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.393
+FDPZ.Components.Clients.Client_ny_gn.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.424
+FDPZ.Components.InterfacesGlobal.LogicConfig.LogicEnabled	sgFDPZ	1	0x101	26.09.2008 13:29:11.456
+FDPZ.Components.InterfacesGlobal.LogicConfig.Rule	sgFDPZ	"TruthTable02"	0x101	26.09.2008 13:29:11.487
+FDPZ.Components.InterfacesGlobal.LogicConfig.Inputs	sgFDPZ	"FDPZ.Components.Interfaces.*"	0x101	26.09.2008 13:29:11.518
+FDPZ.Components.InterfacesGlobal.Params	sgFDPZ	"FDPZ.ComponentsParams"	0x101	26.09.2008 13:29:11.549
+FDPZ.Components.Interfaces.Interface_MV.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.581
+FDPZ.Components.Interfaces.Interface_TACO.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.612
+FDPZ.Components.Interfaces.Interface_SYLEX.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.643
+FDPZ.Components.Interfaces.Interface_INIS.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.674
+FDPZ.Components.INIS.INIS_1_FDP.Events.EventText	sgFDPZ	"INIS 1: FDP"	0x101	22.10.2007 14:56:41.381
+FDPZ.Components.INIS.INIS_1_FDP.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.706
+FDPZ.Components.INIS.INIS_1_SWITCH_COMMUT.Events.EventText	sgFDPZ	"INIS 1: SWITCH"	0x101	22.10.2007 14:56:41.693
+FDPZ.Components.INIS.INIS_1_SWITCH_COMMUT.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.737
+FDPZ.Components.INIS.INIS_1_STANDBY.Events.EventText	sgFDPZ	"INIS 1 - INIS 2"	0x101	22.10.2007 14:56:42.006
+FDPZ.Components.INIS.INIS_1_STANDBY.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.768
+FDPZ.Components.INIS.INIS_1_AFTN.Events.EventText	sgFDPZ	"INIS 1: AFTN"	0x101	22.10.2007 14:56:42.349
+FDPZ.Components.INIS.INIS_1_AFTN.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.799
+FDPZ.Components.INIS.INIS_UNIT_1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.831
+FDPZ.Components.INIS.INIS_UNIT_2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.862
+FDPZ.Components.INIS.INIS_2_FDP.Events.EventText	sgFDPZ	"INIS 2: FDP"	0x101	22.10.2007 14:56:43.224
+FDPZ.Components.INIS.INIS_2_FDP.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.893
+FDPZ.Components.INIS.INIS_2_AFTN.Events.EventText	sgFDPZ	"INIS 2: AFTN"	0x101	22.10.2007 14:56:43.537
+FDPZ.Components.INIS.INIS_2_AFTN.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.924
+FDPZ.Components.INIS.INIS_2_STANDBY.Events.EventText	sgFDPZ	"INIS 2 - INIS 1"	0x101	22.10.2007 14:56:43.849
+FDPZ.Components.INIS.INIS_2_STANDBY.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.956
+FDPZ.Components.INIS.INIS_2_SWITCH_COMMUT.Events.EventText	sgFDPZ	"INIS 2: SWITCH"	0x101	22.10.2007 14:56:44.162
+FDPZ.Components.INIS.INIS_2_SWITCH_COMMUT.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.987
+FDPZ.Components.Switch_1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.018
+FDPZ.Components.Switch_2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.049
+FDPZ.Components.Switch_3.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.081
+FDPZ.Components.Clients.Client_ai_01.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.112
+FDPZ.Components.Clients.Client_ai_02.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.143
+FDPZ.Components.Interfaces.Interface_ZECAT_A.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.174
+FDPZ.Components.Interfaces.Interface_ZECAT_B.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:12.206
+FDPZ.Components.SPMOXAsGlobal.LogicConfig.LogicEnabled	sgFDPZ	1	0x101	26.09.2008 13:29:09.659
+FDPZ.Components.SPMOXAsGlobal.LogicConfig.Rule	sgFDPZ	"TruthTable02"	0x101	26.09.2008 13:29:09.690
+FDPZ.Components.SPMOXAsGlobal.LogicConfig.Inputs	sgFDPZ	"FDPZ.Components.SPMOXAs.SPMOXA_*"	0x101	26.09.2008 13:29:09.721
+FDPZ.Components.SPMOXAsGlobal.Params	sgFDPZ	"FDPZ.ComponentsParams"	0x101	26.09.2008 13:29:09.753
+FDPZ.Components.SPMOXAs.SPMOXA_1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.237
+FDPZ.Components.SPMOXAs.SPMOXA_2.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.268
+FDPZ.Components.StripPrinters.StripPrinter_M1.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:09.909
+FDPZ.Components.Clients.Client_m1_re.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.675
+FDPZ.Components.Clients.Client_m1_rp.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:10.706
+FDPZ.Components.Clients.Client_w_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.143
+FDPZ.Components.Clients.Client_e_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.174
+FDPZ.Components.Clients.Client_m2_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.206
+FDPZ.Components.Clients.Client_m1_rc.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.237
+FDPZ.Components.Clients.Client_fdo_ts.Params	sgFDPZ	"FDPZ.SubComponentsParams"	0x101	26.09.2008 13:29:11.049
+
+# AlertValue
+ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold
+FDPZ.GlobalStatus.Alarms.AlarmActive	sgFDPZ		12					"FDPZ/FDPZMainPanel.pnl"		lt:1 LANG:5 "SMC gemäss Pikettliste aufbieten"	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000			lt:1 LANG:5 "Alarm on FDPZ"	lt:1 LANG:5 ""												0	

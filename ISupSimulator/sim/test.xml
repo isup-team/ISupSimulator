@@ -1,0 +1,388 @@
+<service.ServiceComposite name="Simulator">
+  <service.ServiceComposite name="ISup-Z">
+    <service.ServiceComposite name="optinet">
+      <snmp name="SNMP Default" port="161" version="v2c" context="public">
+        <mib name="optinet" prefixOID="1.3.6.1.4.1.637.65">
+          <convertTables>
+            <SNMPConvertTable name="ConvertTable01">
+              <entry status="OPS">
+                <value type="smi.Integer32">1</value>
+              </entry>
+              <entry status="SBY">
+                <value type="smi.Integer32">2</value>
+              </entry>
+              <entry status="U_S">
+                <value type="smi.Integer32">3</value>
+              </entry>
+              <entry status="UKN">
+                <value type="smi.Integer32">4</value>
+              </entry>
+            </SNMPConvertTable>
+            <SNMPConvertTable name="ConvertTable02">
+              <entry status="U_S">
+                <value type="smi.Integer32">-1</value>
+              </entry>
+              <entry status="OPS">
+                <value type="smi.Integer32">0</value>
+              </entry>
+              <entry status="DEG">
+                <value type="smi.Integer32">1</value>
+              </entry>
+            </SNMPConvertTable>
+            <SNMPConvertTable name="New ConvertTable">
+              <entry status="OPS">
+                <value type="smi.OctetString">Optinet</value>
+              </entry>
+            </SNMPConvertTable>
+          </convertTables>
+          <scalar name="unsolicitedEventsEnabled" subOID="1.1.1.1.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Integer32">1</value>
+          </scalar>
+          <scalar name="descr" subOID="1.1.1.3.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable[3]"/>
+            <value type="smi.OctetString">Optinet</value>
+          </scalar>
+          <scalar name="t1" subOID="1.1.1.4.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable"/>
+            <value type="smi.Integer32">1</value>
+          </scalar>
+          <scalar name="t11" subOID="1.1.1.10.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable[2]"/>
+            <value type="smi.Integer32">0</value>
+          </scalar>
+          <scalar name="t2" subOID="1.1.1.5.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Integer32">52</value>
+          </scalar>
+          <scalar name="t3" subOID="1.1.1.7.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Counter64">52</value>
+          </scalar>
+          <scalar name="t4" subOID="1.1.1.8.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Gauge32">52</value>
+          </scalar>
+          <scalar name="t5" subOID="1.1.1.9.0.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.TimeTicks">00:00:00.52</value>
+          </scalar>
+          <scalar name="t7" subOID="1.1.1.9.1.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.IpAddress">156.135.81.124</value>
+          </scalar>
+          <scalar name="t8" subOID="1.1.1.9.2.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.TcpAddress">156.135.81.124/161</value>
+          </scalar>
+          <scalar name="t9" subOID="1.1.1.9.3.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.UdpAddress">156.135.81.124/162</value>
+          </scalar>
+          <scalar name="t10" subOID="1.1.1.9.4.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Null">Null</value>
+          </scalar>
+          <scalar name="t12" subOID="1.1.1.9.5.0" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <value type="smi.Opaque">0f:52</value>
+          </scalar>
+          <table name="alarmTable" subOID="1.1.1.2.1" access="READ_ONLY">
+            <parentMib reference="../.."/>
+            <columns>
+              <column name="currentAlarmId" index="1" syntax="INTEGER">
+                <access>READ_ONLY</access>
+              </column>
+              <column name="friendlyName" index="2" syntax="OCTET_STRING">
+                <access>READ_ONLY</access>
+              </column>
+            </columns>
+            <rows>
+              <row index="3647">
+                <smi.Integer32>3647</smi.Integer32>
+                <smi.OctetString>Test 7</smi.OctetString>
+              </row>
+              <row index="3648">
+                <smi.Integer32>3648</smi.Integer32>
+                <smi.OctetString>Test 8</smi.OctetString>
+              </row>
+            </rows>
+          </table>
+        </mib>
+      </snmp>
+    </service.ServiceComposite>
+    <traps name="ScNet" address="156.135.81.124" sourceAddress="156.135.164.50" port="162" interval="1000" enterpriseOID="1.3.6.1.4.1.123.3.44.2.3" community="public" genericTrap="6" specificTrap="1">
+      <convertTables>
+        <SNMPConvertTable name="ConvertTable03">
+          <entry status="U_S">
+            <value type="smi.Integer32">-1</value>
+          </entry>
+          <entry status="UKN">
+            <value type="smi.Integer32">7</value>
+          </entry>
+          <entry status="DEG">
+            <value type="smi.Integer32">1</value>
+          </entry>
+        </SNMPConvertTable>
+      </convertTables>
+      <variableBinding oid="1.3.6.1.4.1.123.3.44.1.5.1">
+        <value type="smi.Integer32">0</value>
+        <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable"/>
+      </variableBinding>
+      <variableBinding oid="1.3.6.1.4.1.123.3.44.1.5.2">
+        <value type="smi.Integer32">1</value>
+        <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable"/>
+      </variableBinding>
+      <variableBinding oid="1.3.6.1.4.1.123.3.44.1.5.3">
+        <value type="smi.Integer32">-1</value>
+        <convertTable type="SNMPConvertTable" reference="../../convertTables/SNMPConvertTable"/>
+      </variableBinding>
+    </traps>
+    <xml.XmlClientService name="xml client">
+      <client name="FDPZ" period="10000" delimiter="ZERO">
+        <parent reference="../.."/>
+        <system name="FDPZ" source="">
+          <subSystem name="MainServer_1" status="OPS">
+            <label name="Label1" value="OPS"/>
+            <label name="Label2" value="Test"/>
+            <message>test message</message>
+          </subSystem>
+          <subSystem name="MainServer_2" status="U_S"/>
+        </system>
+      </client>
+      <client name="AFPS" period="10000" delimiter="ZERO">
+        <parent reference="../.."/>
+        <system name="AFPS" source="">
+          <subSystem name="ct_service" status="OPS"/>
+          <subSystem name="ct_idm" status="OPS"/>
+          <subSystem name="ct_ruleengine" status="OPS"/>
+          <subSystem name="ct_aftnio" status="OPS"/>
+          <subSystem name="ct_servicebackup" status="OPS"/>
+          <subSystem name="ct_idmbackup" status="OPS"/>
+          <subSystem name="ct_ruleenginebackup" status="OPS"/>
+          <subSystem name="ct_aftniobackup" status="OPS"/>
+        </system>
+      </client>
+      <hosts>
+        <tcpHost address="156.135.81.226" port="5000"/>
+        <tcpHost address="156.135.81.227" port="5000"/>
+      </hosts>
+    </xml.XmlClientService>
+    <xml.XmlServerService name="CRYSTAL" port="5010" heartbeatPeriod="3000" statusPeriod="5000" delimiter="PIPE">
+      <system name="CRYSTAL" source="">
+        <subSystem name="broker_LSAS_A" status="OPS"/>
+        <subSystem name="broker_LSAS_B" status="OPS"/>
+      </system>
+    </xml.XmlServerService>
+    <xml.XmlServerService name="INCH" port="5000" heartbeatPeriod="3000" statusPeriod="5000" delimiter="PIPE">
+      <system name="INCH" source="">
+        <subSystem name="broker_LSGG_A" status="OPS"/>
+        <subSystem name="broker_LSGG_B" status="OPS"/>
+      </system>
+    </xml.XmlServerService>
+    <homemade.HomemadeService name="CPR" port="9069" heartbeatPeriod="10000" statusPeriod="50000">
+      <hmsystem name="ART_ARTAS">
+        <value type="homemade.HMStatus">OPS</value>
+      </hmsystem>
+      <hmsystem name="ART_RMCDE">
+        <value type="homemade.HMStatus">OPS</value>
+      </hmsystem>
+    </homemade.HomemadeService>
+    <modbus.WagoService name="Cunay WAGO Bus" port="COM1" id="1" baudRate="BR_19200" dataBits="B_8" parity="NONE" stopBits="B_1" echo="false" encoding="ASCII">
+      <convertTables>
+        <modbus.WagoConvertTable name="Direct">
+          <entry status="OPS">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="U_S">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+        <modbus.WagoConvertTable name="Inverted">
+          <entry status="U_S">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="OPS">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+        <modbus.WagoConvertTable name="Inverted TEC">
+          <entry status="ABS">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="TEC">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+      </convertTables>
+      <coils>
+        <coil id="1" name="Station Intrusion" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="2" name="Smoke Alarm" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="3" name="Security System" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="4" name="Technical Presence" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[3]"/>
+        </coil>
+        <coil id="5" name="T+T Line Faulty" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+      </coils>
+      <registers/>
+    </modbus.WagoService>
+    <modbus.WagoService name="Dole WAGO Bus" port="COM1" id="1" baudRate="BR_19200" dataBits="B_8" parity="NONE" stopBits="B_1" echo="false" encoding="ASCII">
+      <convertTables>
+        <modbus.WagoConvertTable name="Direct">
+          <entry status="OPS">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="U_S">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+        <modbus.WagoConvertTable name="Inverted">
+          <entry status="U_S">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="OPS">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+        <modbus.WagoConvertTable name="Direct TEC">
+          <entry status="ABS">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="TEC">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+        <modbus.WagoConvertTable name="Inverted TEC">
+          <entry status="TEC">
+            <value type="boolean">true</value>
+          </entry>
+          <entry status="ABS">
+            <value type="boolean">false</value>
+          </entry>
+        </modbus.WagoConvertTable>
+      </convertTables>
+      <coils>
+        <coil id="6" name="DOLS: Fault On Radar" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="7" name="DOLS: Warning On Radar" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="24" name="Station Intrusion" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[2]"/>
+        </coil>
+        <coil id="25" name="Technical Presence" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[4]"/>
+        </coil>
+        <coil id="26" name="Alarm Trajet TimeOut" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[2]"/>
+        </coil>
+        <coil id="27" name="Technical presence cabin" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[3]"/>
+        </coil>
+        <coil id="28" name="Top" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[2]"/>
+        </coil>
+        <coil id="29" name="Bottom" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[2]"/>
+        </coil>
+        <coil id="30" name="Engine running" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="31" name="RDR Leak" value="false">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable[2]"/>
+        </coil>
+        <coil id="32" name="Alarm fuse AS-S1" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="33" name="Alarm fuse AS-L1" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="34" name="Alarm fuse GS-S1" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="35" name="Alarm Telesurveillance ITS" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="36" name="Alarm cabine battery" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="81" name="CERBERUS (OPSStatus)" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="82" name="CERBERUS (WIPStatus)" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="83" name="Alarme générale" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="84" name="Rez-de-chaussée onduleurs planchers" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="85" name="Rez-de-chaussée radar batteries" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="86" name="Rez-de-chaussée hall radar machin. téléphérique" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="87" name="1er étage salle radar bureau Tx VHF" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="88" name="1er étage local batteries VHF/UHF" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="89" name="2ème étage radar machinerie ventilation" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="90" name="2ème étage radar local dépôt" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="91" name="2ème étage local base antenne" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="92" name="Rez-de-chaussée bâtiment VHF" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="93" name="1er étage bâtiment VHF équipement" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="94" name="Rez-de-chaussée bâtiment habitation détection" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="95" name="1er étage bâtiment habitation détection" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="96" name="Local diesel" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="97" name="VHF vide sanitaire" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="98" name="VHF Grenier" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="99" name="Reserve 1" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="100" name="Reserve 2" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+        <coil id="101" name="Reserve 3" value="true">
+          <convertTable reference="../../../convertTables/modbus.WagoConvertTable"/>
+        </coil>
+      </coils>
+      <registers/>
+    </modbus.WagoService>
+  </service.ServiceComposite>
+</service.ServiceComposite>

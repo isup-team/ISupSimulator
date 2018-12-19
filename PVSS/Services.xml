@@ -1,0 +1,70 @@
+<services name="root">
+  <services name="Test group">
+    <snmp name="SNMP Default" port="161" version="v2c">
+      <mib name="optinet" enterpriseOID="1.3.6.1.4.1.637.65">
+        <scalar name="unsolicitedEventsEnabled" subOID="1.1.1.1.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.Integer32">1</value>
+        </scalar>
+        <scalar name="descr" subOID="1.1.1.3.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.OctetString">Optinet</value>
+        </scalar>
+        <scalar name="t1" subOID="1.1.1.4.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.Counter32">52</value>
+        </scalar>
+        <scalar name="t2" subOID="1.1.1.5.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.UnsignedInteger32">52</value>
+        </scalar>
+        <scalar name="t3" subOID="1.1.1.7.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.Counter64">52</value>
+        </scalar>
+        <scalar name="t4" subOID="1.1.1.8.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.Gauge32">52</value>
+        </scalar>
+        <scalar name="t5" subOID="1.1.1.9.0.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.TimeTicks">520</value>
+        </scalar>
+        <scalar name="t7" subOID="1.1.1.9.1.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.IpAddress">156.135.81.124</value>
+        </scalar>
+        <scalar name="t8" subOID="1.1.1.9.2.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.TcpAddress">156.135.81.124/161</value>
+        </scalar>
+        <scalar name="t9" subOID="1.1.1.9.3.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.UdpAddress">156.135.81.124/162</value>
+        </scalar>
+        <scalar name="t10" subOID="1.1.1.9.4.0" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <value type="smi.Null">5</value>
+        </scalar>
+        <table name="alarmTable" subOID="1.1.1.2.1" access="READ_ONLY">
+          <parentMib reference="../.."/>
+          <columns>
+            <column name="currentAlarmId" index="1" syntax="INTEGER"/>
+            <column name="friendlyName" index="2" syntax="OCTET_STRING"/>
+          </columns>
+          <rows>
+            <row index="3647">
+              <smi.Integer32>3647</smi.Integer32>
+              <smi.OctetString>Test 7</smi.OctetString>
+            </row>
+            <row index="3648">
+              <smi.Integer32>3648</smi.Integer32>
+              <smi.OctetString>Test 8</smi.OctetString>
+            </row>
+          </rows>
+        </table>
+      </mib>
+      <context>public</context>
+    </snmp>
+  </services>
+</services>

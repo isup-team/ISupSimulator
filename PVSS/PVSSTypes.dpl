@@ -1,0 +1,67 @@
+# ascii dump of database
+
+# DpType
+TypeName
+SimpleTypes.SimpleTypes	1#1
+	char	19#2
+	uint	20#3
+	int	21#4
+	float	22#5
+	bool	23#6
+	bit32	24#7
+	string	25#8
+	time	26#9
+	dpid	27#10
+	langstring	42#11
+	blob	46#12
+DynTypes.DynTypes	1#1
+	dynbit32	8#2
+	dynchar	3#3
+StructTypes.StructTypes	1#1
+	structchar	11#2
+		ch1	19#4
+		ch2	19#5
+		ch3	19#6
+	structstring	17#3
+		s1	25#7
+		s2	25#8
+		s3	25#9
+		s4	25#10
+Composite.Composite	1#1
+	Simples	41#2:SimpleTypes
+	Dyns	41#3:DynTypes
+	Structs	41#4:StructTypes
+	Node	1#5
+
+# Datapoint/DpId
+DpName	TypeName	ID
+DP	Composite	369
+_mp_Composite	Composite	370
+
+# DpValue
+ElementName	TypeName	_original.._value	_original.._status	_original.._stime
+DP.Simples.char	Composite	\99	0x101	15.10.2009 15:40:47.812
+DP.Dyns.dynchar	Composite	\97, \102, \104, \101, \103, \101, \99, \115, \102, \101	0x101	15.10.2009 15:43:54.691
+
+#not to read
+DP.Simples.uint	Composite	10	0x101	15.10.2009 15:41:13.969
+DP.Simples.int	Composite	10	0x101	15.10.2009 15:41:05.594
+DP.Simples.float	Composite	5.45	0x101	15.10.2009 15:41:19.422
+DP.Simples.bool	Composite	1	0x101	15.10.2009 15:41:26.047
+DP.Simples.bit32	Composite	0xd0000000	0x101	15.10.2009 15:41:32.251
+DP.Simples.string	Composite	"test"	0x101	15.10.2009 15:41:37.267
+DP.Simples.time	Composite	25.10.2009 15:54:01.050	0x101	15.10.2009 15:41:57.892
+DP.Simples.dpid	Composite	DP.Simples.time	0x101	15.10.2009 15:42:39.159
+DP.Simples.langstring	Composite	lt:1 LANG:1 "text en langue"	0x101	15.10.2009 15:42:54.597
+DP.Simples.blob	Composite	"00000F0F00000F0A0A0DD0"	0x101	15.10.2009 15:43:18.347
+_mp_Composite.Simples.char	Composite	\97	0x101	15.10.2009 15:46:00.456
+_mp_Composite.Simples.uint	Composite	5	0x101	15.10.2009 15:40:35.156
+DP.Dyns.dynbit32	Composite	0xa4000000, 0x80000000, 0xaba80000, 0x52800000, 0x50000000	0x101	15.10.2009 15:43:44.144
+DP.Dyns.dynchar	Composite	\97, \102, \104, \101, \103, \101, \99, \115, \102, \101	0x101	15.10.2009 15:43:54.691
+DP.Structs.structchar[1]	Composite	\97	0x101	15.10.2009 15:45:15.394
+DP.Structs.structchar[2]	Composite	\98	0x101	15.10.2009 15:45:18.957
+DP.Structs.structchar[3]	Composite	\99	0x101	15.10.2009 15:45:22.660
+DP.Structs.structstring[1]	Composite	"aeqwe"	0x101	15.10.2009 15:45:28.097
+DP.Structs.structstring[2]	Composite	"ztiu"	0x101	15.10.2009 15:45:39.363
+DP.Structs.structstring[3]	Composite	"tzuiuizizut"	0x101	15.10.2009 15:45:43.003
+DP.Structs.structstring[4]	Composite	"tzuiit"	0x101	15.10.2009 15:45:52.300
