@@ -8,7 +8,6 @@ import ch.skyguide.pvss.data.Database;
 import ch.skyguide.pvss.data.dataPointType.NodeType;
 import ch.skyguide.pvss.network.persistency.dpl.DplUtils;
 import ch.skyguide.pvss.network.service.ServiceLeaf;
-import ch.skyguide.pvss.network.service.snmp.builder.ManagedObjectBuilder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -204,7 +203,6 @@ public class SNMPAgentService extends ServiceLeaf implements MOGroup {
         for (SNMPMIB mib : mibs) {
             mib.unregisterMOs(server, context);
 
-
         }
     }
 
@@ -216,7 +214,7 @@ public class SNMPAgentService extends ServiceLeaf implements MOGroup {
             snmpAgent = snmpAgentPool.getAgentInstance(this);
 
             System.out.println("CONTEXT " + context.toString());
-            
+
             if (version != Version.v3) {
                 this.registerMOs(snmpAgent.getServer(), context);
             } else {
