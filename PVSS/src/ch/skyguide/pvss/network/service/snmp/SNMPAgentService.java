@@ -213,8 +213,6 @@ public class SNMPAgentService extends ServiceLeaf implements MOGroup {
             SNMPAgentPool snmpAgentPool = SNMPAgentPool.getInstance();
             snmpAgent = snmpAgentPool.getAgentInstance(this);
 
-            System.out.println("CONTEXT " + context.toString());
-
             if (version != Version.v3) {
                 this.registerMOs(snmpAgent.getServer(), context);
             } else {
