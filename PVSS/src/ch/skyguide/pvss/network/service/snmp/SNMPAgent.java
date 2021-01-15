@@ -125,7 +125,7 @@ public class SNMPAgent extends BaseAgent {
         } else {
             LOGGER.info("Build SNMPv3 USM");
             vacm.addGroup(SecurityModel.SECURITY_MODEL_USM,
-                    new OctetString("SNMPManager"),
+                    new OctetString(parent.getUsmName()),
                     new OctetString("v3group"),
                     StorageType.nonVolatile);
 
