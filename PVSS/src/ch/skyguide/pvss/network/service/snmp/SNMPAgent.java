@@ -184,9 +184,7 @@ public class SNMPAgent extends BaseAgent {
     protected void initTransportMappings() throws IOException {
         transportMappings = new TransportMapping[1];
 
-        String address = java.net.Inet4Address.getLocalHost().getHostAddress();
-        //String address = "127.0.0.1/" + String.valueOf(parent.getPort());
-        address += "/" + String.valueOf(parent.getPort());
+        String address = "0.0.0.0/" + String.valueOf(parent.getPort());
 
         Address addr = GenericAddress.parse(address);
 
